@@ -46,7 +46,8 @@ Post.create({                    //create a post and push id of that post to arr
 }
 });
 
-User.findOne({name:"Abhishek"}).populate("posts").exec(function(err, user){ //will present all the data all the data of the user will posts populated
+//will present all the data //all the data of the user's posts will be populated
+User.findOne({name:"Abhishek"}).populate("posts").exec(function(err, user){ 
     if(err) { console.log("Error!");}
     else{
         console.log(user);
