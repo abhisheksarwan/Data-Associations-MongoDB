@@ -32,7 +32,7 @@ Post.create({
 }
 });
 
-//will present all the data //all the data of the user will posts populated
+//will present all the data //all the data of the user's posts will be populated
 User.findOne({name:"Shivam"}).populate("posts").exec(function(err, user){ 
     if(err) { console.log("Error!");}
     else{
